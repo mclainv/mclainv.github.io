@@ -1,0 +1,53 @@
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    width: 22vw;
+    height: 100%;
+    padding: 40px;
+    z-index: 2;
+    top: 0;
+    left: 5vw;
+    border-right: 1px solid rgba(238, 238, 238, 0.3);
+    background-color: #EEE8E4;
+    opacity: 0.95;
+    line-height: 2;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-left: -40px;
+    margin-top: -70px;
+    margin-bottom: -50px;
+}
+
+.nav-header {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+/* Add hover effect */
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Add this for the longer menu items */
+.nav-link-long {
+    text-wrap: nowrap;
+}
