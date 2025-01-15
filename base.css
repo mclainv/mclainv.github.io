@@ -6,14 +6,13 @@
 
 body {
     font-family: "Noto Serif", serif;
-    overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
     background-color: #EEE8E4;
+    overflow: hidden;
 }
-
-.container {
+body.active {
+    overflow: auto;
+}
+.horizontal-container {
     display: flex;
     height: 70vh;
     position: relative;
@@ -34,4 +33,10 @@ body {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-  }
+}
+#landing-section {
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

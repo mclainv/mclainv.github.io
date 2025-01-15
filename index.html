@@ -8,44 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="src/es-transparent.png" width="397px" height="104px" alt="McLain Logo">
-            </div>
-            <h1 class="nav-header">McLain Adams</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <h2 class="nav-header">Projects</h2>
-            <ul class="nav-links">
-                <li><a href="#fire-island">Visual Synthesizer</a></li>
-                <li class="nav-link-long"><a href="#brownstones">Retrograde Lockscreen on iOS 15</a></li>
-                <li class="nav-link-long"><a href="#commercial">Super Mario World Practice Tool</a></li>
-            </ul>
-        </nav>
-<!-- what is retrograde lockscreen - what did i do exactly -->
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <img src="src/house_desk3.png" width="1065px" height="696px" alt="Project 1">
-            </div>
-            <div id="jailbreak-item" class="portfolio-item">
-                <video class="jailbreak-video"
-                autoplay="true" loop="true" controlslist="nodownload" playsinline="true" muted="true" style="background-color: black;">
-                    <source src="src/landing-portfolio/jailbreak.mp4" 
-                    type="video/mp4">
-                </video>
-            </div>
-            <div class="portfolio-item">
-                <img src="http://placecats.com/millie/800/1200" alt="Project 2">
-            </div>
-            <div class="portfolio-item">
-                <img src="http://placecats.com/1000/1500" alt="Project 2">
+    <section id="landing-section">
+        <div class="horizontal-container">
+            <nav class="sidebar">
+                <div class="logo">
+                    <img src="src/es-transparent.png" width="397px" height="104px" alt="McLain Logo">
+                </div>
+                <h1 class="nav-header">McLain Adams</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <h2 class="nav-header">Projects</h2>
+                <ul class="nav-links">
+                    <li><a href="#fire-island">Visual Synthesizer</a></li>
+                    <li class="nav-link-long"><a href="#brownstones">Retrograde Lockscreen on iOS 15</a></li>
+                    <li class="nav-link-long"><a href="#commercial">Super Mario World Practice Tool</a></li>
+                </ul>
+            </nav>
+            <div id="portfolio" class="portfolio">
+                <div class="portfolio-item">
+                    <img src="src/house_desk3.png" width="1065px" height="696px" alt="Project 1">
+                </div>
+                <a id="jailbreak-landing-button" href="#jailbreak-section">
+                    <div id="jailbreak-item" class="portfolio-item">
+                        <video class="jailbreak-landing-video"
+                        autoplay="true" loop="true" controlslist="nodownload" playsinline="true" muted="true" style="background-color: black;">
+                            <source src="src/landing-portfolio/jailbreak.mp4" 
+                            type="video/mp4">
+                        </video>
+                    </div>
+                </a>
+                <div class="portfolio-item">
+                    <img src="https://placecats.com/millie/800/1200" alt="Project 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placecats.com/1000/1500" alt="Project 2">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="jailbreak-section">
+        <h2>Jailbreak</h2> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <!-- what is retrograde lockscreen - what did i do exactly -->
 </body>
 </html>
